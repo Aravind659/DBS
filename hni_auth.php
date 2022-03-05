@@ -5,7 +5,7 @@ if(mysqli_connect_error($con))
 {
 	die("Failed to connect");
 }
-
+abc
 $username=$_POST["username"];
 $password=$_POST["password"];
 
