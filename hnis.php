@@ -5,11 +5,14 @@ if(mysqli_connect_error($con))
 {
 	die("Failed to connect");
 }
-abc
-$username=$_POST["username"];
-$password=$_POST["password"];
 
-$query="select * from hni_auth where username='".$username."' and password='".$password."';";
+$hni=$_POST["hni"];
+
+$date=$_POST["<script>document.getElementbyId(\"date\").value</script>"];
+
+$time=$_POST["time"]
+
+$query="insert into hni values (".$date.",".$time.") ;";
 $status=mysqli_query($conn,$query);
 
 $num_rows = mysqli_num_rows($status);
